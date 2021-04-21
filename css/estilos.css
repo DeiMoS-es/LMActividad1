@@ -1,0 +1,17 @@
+/*Eliminamos los margin y padding que pudiese tener el documento por defecto y añadimos una fuente*/
+*{/*Utilizamos el selector universal*/
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Empiezo a dar estilo a la parte más ecterior de la página*/
+#contenedor{ /*Utilizamos un selector de id*/
+    border: 2px solid #000;
+    width: 100%; /*Aplico un ancho del 100% para que se ajuste a la ventana del explorador*/
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+}
+
+/*Siguiendo el orden de la estructura HTML empieza el estilo del header*/
