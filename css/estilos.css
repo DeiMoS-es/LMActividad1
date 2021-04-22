@@ -62,19 +62,33 @@ utilizo ese identificador para editarlo*/
 section{
     border: 1px solid #903;
     width: 48%;
-    height: 700px;
+    min-height: 700px;
     margin-right: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
     float:left ;
     z-index: 1;
 }
+/*Aplico estilo al header de section*/
+.seccion{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+    background-color: gray;
+}
+/*Aplico estilo al footer de section*/
+footer{    
+    width: 100%;
+    height: 100px;
+    margin-top: 500px;
+    background-color: grey;
+}
 
 /*Comienzo el estilo del aside*/
 aside{
     border: 1px solid #903;
     width: 50%;
-    height: 700px;
+    min-height: 700px;
     float: left;    
     margin-top: 15px;   
 }
