@@ -1,0 +1,114 @@
+* {
+    font-family: sans-serif;
+}
+
+header {
+    min-height: 10%;
+    max-height: 20%;
+    object-fit: fill;
+    background: linear-gradient(to left, #5ccae1 50%, white);
+}
+
+section header, footer {
+    background: #5ccae1;
+    border-radius: 0px 30px 30px 0px;
+    font-size: 1em;
+    text-align: center;
+}
+
+section footer {
+    text-align: start;
+}
+
+h1 {
+    padding: 5px;
+}
+
+h2 {
+    background: linear-gradient(to right, #5ccae1 50%, white);
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+h1, h2 {
+    color: rgb(75, 75, 75);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.QM::before {
+    content: open-quote;
+}
+.QM::after {
+    content: close-quote;
+}
+
+
+img {
+    height: 100px;
+}
+
+nav {
+    min-height: 10%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #DDD;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #CCC;
+}
+nav ul li {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+li a {
+    /*width: 10%;
+    height: max-content;*/
+    color: #DDD;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.9em;
+    /*display: block;*/
+    padding: 6px;
+    float: left;
+    border-bottom-width: 7px;
+    border-bottom-style: solid;
+    border-bottom-color: #454545;
+    background-color: #6A6A6A;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #CCC;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #CCC;
+}
+li a:hover {
+    color: #FFF;
+    font-weight: bold;
+    background-color: #3E3E3E;
+    border-bottom-width: 7px;
+    border-bottom-style: solid;
+    border-bottom-color: #666;
+    border-left-width: 1px;
+    border-left-style: solid;		
+    border-bottom-color: #5ccae1;
+}
