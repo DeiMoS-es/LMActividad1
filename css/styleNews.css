@@ -47,6 +47,29 @@ article p {
     text-align: justify;
 }
 
+article img {
+    float: right;
+    width: 30%;
+    /*min-width: 119px;*/
+    height:15vw;
+    /*min-height: 85px;*/
+    box-sizing: border-box;
+    max-height:min-content;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#noticia1img {
+    min-width: 119px;
+    min-height: 85px;
+}
+
+#noticia2img {
+    min-width: 190px;
+    min-height: 137px;
+}
+
 #pie_seccion {
     font-style: italic;
     margin: 0% auto 1%;
@@ -76,6 +99,10 @@ h2 {
     color: rgb(75, 75, 75);
 }*/
 
+h3 {
+    font-size: 0.85em;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -101,8 +128,12 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+section a:hover {
     background-color: #DDD;
+}
+
+p > a {
+    color:mediumblue;
 }
 
 nav ul {
@@ -110,9 +141,9 @@ nav ul {
     list-style: none;
     margin: 0px;
     padding: 0px;
-    border-left-width: 1px;
+    /*border-left-width: 1px;
     border-left-style: solid;
-    border-left-color: #CCC;
+    border-left-color: #CCC;*/
 }
 nav ul li {
     /*display: inline-flex;*/
@@ -122,10 +153,10 @@ nav ul li {
     box-sizing: border-box;
     white-space: nowrap;
 }
-li a {
+nav ul li a {
     /*width: 10%;
-    height: max-content;*/
-    color: #DDD;
+    height: max-content;
+    color: #DDD;*/
     text-align: center;
     font-weight: bold;
     text-decoration: none;
@@ -133,25 +164,39 @@ li a {
     /*display: block;*/
     padding: 6px;
     float: left;
-    border-bottom-width: 7px;
+    /*border-bottom-width: 7px;
     border-bottom-style: solid;
-    border-bottom-color: #454545;
+    border-bottom-color: #ffffff00;
     background-color: #6A6A6A;
     border-top-width: 1px;
     border-top-style: solid;
     border-top-color: #CCC;
     border-left-width: 1px;
     border-left-style: solid;
-    border-left-color: #CCC;
+    border-left-color: #CCC;*/
 }
-li a:hover {
-    color: #FFF;
+nav ul li a:hover {
+    color: #499fb1;
     font-weight: bold;
-    background-color: #3E3E3E;
+    /*background-color: #3E3E3E;
     border-bottom-width: 7px;
     border-bottom-style: solid;
     border-bottom-color: #666;
     border-left-width: 1px;
     border-left-style: solid;		
-    border-bottom-color: #5ccae1;
+    border-bottom-color: #5ccae1;*/
+}
+
+aside ul {
+    list-style: none;
+}
+
+#contenedor > footer{
+    background: linear-gradient(to top, #5ccae1, white 90%);
+    float: left;
+    width: 100%;
+}
+
+#actual {
+    background-color: #5ccae1;
 }

@@ -15,7 +15,7 @@
         <nav>
             <ul>
                 <li class="home"> <a href="#">Principal</a> </li>
-                <li class="news"> <a href="Noticias.html">Noticias</a> </li>
+                <li class="news"> <a href="Noticias.html" id="actual">Noticias</a> </li>
                 <li class="where"> <a href="#">Publicaciones</a> </li>
                 <li class="us"> <a href="#">Localización</a> </li>
                 <li class="areas"> <a href="#">Quienes somos</a> </li>
@@ -27,8 +27,9 @@
             <header>
                 <h1>Últimas noticias</h1>
             </header>
-            <article>
+            <article class="noticia1">
                 <h2>Birrómanos anónimos: <span class="QM">Nadie nos cierra el grifo</span></h2>
+                <img id="noticia1img" src="img/arms_akimbo_beer.webp">
                 <p>
                     Manifestación con los brazos en jarra para mostrar el descontento de un colectivo cuya consigna es clara: <span class="QM">La última, y nos vamos</span>.</p>
                 <p>
@@ -44,8 +45,9 @@
                     Seguiremos desinformando, permanezcan atentos.
                 </p>
             </article>
-            <article>
+            <article class="noticia2">
                 <h2>Cervez-app: Nueva aplicación de referencia</h2>
+                <img id="noticia2img" src="img/beerapp.jpg">
                 <p>
                     Hoy se lanza <span class="bold">cervez-app</span>, la aplicación que busca abrir paso entre el mar de espuma de nuestras gélidas latas y el estrépito de botellines.</p>
                 <p>
@@ -60,17 +62,18 @@
             </footer>
         </section>
         <aside>
+            <h2>Más leídas</h2>
             <ul>
                 <li>
-                    Birrómanos anónimos: <span class="QM">Nadie nos cierra el grifo</span>
+                    <h3><a href="Noticias.html#noticia1">Birrómanos anónimos: <span class="QM">Nadie nos cierra el grifo</span></a></h3>
                 </li>
                 <li>
-                    Cervez-app: Nueva aplicación de referencia
+                    <h3><a href="Noticias.html#noticia2">Cervez-app: Nueva aplicación de referencia</a></h3>
                 </li>
             </ul>
         </aside>
         <footer>
-
+            <p>&copy; Artesanos líquidos SA</p>
         </footer>
     </div>
 </body>
