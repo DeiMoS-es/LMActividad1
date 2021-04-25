@@ -1,0 +1,94 @@
+/*Eliminamos los margin y padding que pudiese tener el documento por defecto y añadimos una fuente*/
+*{/*Utilizamos el selector universal*/
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Empiezo a dar estilo a la parte más exterior de la página*/
+#contenedor{ /*Utilizamos un selector de id*/
+    border: 2px solid #000;
+    width: 100%; /*Aplico un ancho del 100% para que se ajuste a la ventana del explorador*/
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 5px;
+}
+
+/*Siguiendo el orden de la estructura HTML empieza el estilo del header, como el header principal tiene un identificador de clase, 
+utilizo ese identificador para editarlo*/
+.principal{
+    border: 1px solid yellow;
+    width: 100%;
+    margin-bottom: 5px;
+    height: 100px;
+    background-color: green;
+    overflow: hidden; /*Añadimos la propiedad overflow para que se adapte a su contenido*/
+    
+}
+
+/*Empiezo a darle estilo al menú nav*/
+.menu ul{
+    display: flex; /*Mediante esta propiedad añadimos el efecto desplegable*/
+    padding: 0px;
+    margin: 0px;
+    list-style: none;/*Eliminamos el estilo de las listas*/
+}
+
+/*Le doy estilos a las etiquetas a, dentro de mi menú nav*/
+.menu a{
+    display: block;
+    padding: 20px;
+    background-color: #F9B53C;
+    text-decoration: none;/*Eliminamos el subrayado de los enlaces*/
+    color: #191c26;
+}
+/*Añado un efecto, que se activará al pasar el ratón por encima*/
+.menu a:hover{
+    background-color: #493bcc;
+}
+/*Utilizando un slector multiple, eliminamos cualquier efecto, en este caso eliminamos el efecto de "caja, que tengan las ul hijas, y se queden como "ocultas"*/
+.menu ul li ul{
+  display: none;    
+}
+
+.menu ul li a:hover + ul, .menu ul li ul:hover{
+    display: block;
+}
+/*Termina el estilo del nav*/
+
+/*Comienzo el estilo del section*/
+section{
+    border: 1px solid #903;
+    width: 48%;
+    min-height: 700px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    float:left ;
+    z-index: 1;
+}
+/*Aplico estilo al header de section*/
+.seccion{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+    background-color: gray;
+}
+/*Aplico estilo al footer de section*/
+footer{    
+    width: 100%;
+    height: 100px;
+    margin-top: 500px;
+    background-color: grey;
+}
+
+/*Comienzo el estilo del aside*/
+aside{
+    border: 1px solid #903;
+    width: 50%;
+    min-height: 700px;
+    float: left;    
+    margin-top: 15px;   
+}
