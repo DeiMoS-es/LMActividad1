@@ -55,6 +55,7 @@ h1{
     padding: 0px;
     margin: 0px;
     list-style: none;/*Eliminamos el estilo de las listas*/
+    position: absolute;
 }
 
 /*Le doy estilos a las etiquetas a, dentro de mi menú nav*/
@@ -90,9 +91,9 @@ section{
     width: 48%;
     min-height: 200px;
     margin-right: 15px;
-    margin-top: 15px;
+    margin-top: 60px;
     margin-bottom: 15px;
-    float:left ;
+    float:left;
 }
 /*Aplico estilo al header de section*/
 .seccion{
@@ -118,7 +119,7 @@ aside{
     width: 50%;
     min-height: 700px;
     float: left;    
-    margin-top: 15px;   
+    margin-top: 60px;   
 }
 
 .noticias{
