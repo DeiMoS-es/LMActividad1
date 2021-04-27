@@ -189,6 +189,8 @@ nav ul li a:hover {
 
 aside ul {
     list-style: none;
+    /*margin-left: 0;*/
+    padding-left: 1rem;
 }
 
 #contenedor > footer{
