@@ -8,47 +8,35 @@ body {
     padding: 0;
 }
 
-header {
+header { /*se da estilo a la cabecera principal*/
     margin: 0;
     padding: 0;
     min-height: 10%;
     max-height: 20%;
     object-fit: fill;
-    background: linear-gradient(to bottom, #5ccae1 20%, white);
+    background: linear-gradient(to bottom, #83898a 20%, white);
 }
 
-section {
+section {/*se define la posicion y anchura de la seccion*/
     float: left;
     width: 70%;
 }
 
-section header {
-    /*background: #5ccae1;
-    border-radius: 0px 30px 30px 0px;*/
+section header {/*se define el estilo del encabezado de la seccion*/
     background: none;
     border-bottom-style: solid;
     border-width: 5px;
-    border-color: #5ccae1;
+    border-color: #83898a;
     font-size: 1em;
     text-align: center;
 }
 
-section footer {
-    background-color:#5ccbe157;
-    border-top-style: solid;
-    border-width: 2px;
-    border-color: #5ccae1;
-    font-size: 1em;
-    text-align: start;
-    padding: 0 0 1% inherit;
-}
-
-article p {
+article p {/*se posiciona el texto de los parrafos de los articulos en el centro*/
     text-align:center;
     
 }
 
-article img {
+article img {/*se da estilo a las imagenes de los articulos*/
     width: 150px;
     height: auto;
     margin: auto;
@@ -56,13 +44,13 @@ article img {
     border-radius: 5px;
 }
 
-h1 {
+h1 {/*se define el estilo para los encabezados principales*/
     padding-left: 10px;
     padding-right: 10px;
 }
 
-h2 {
-    background: linear-gradient(to bottom, #5ccae1, white 90%);
+h2 {/*se define el estilo para los encabezados segundarios*/
+    background: linear-gradient(to bottom, #b9c5c7, white 90%);
     padding: 5px 5px 5px 10px;
     font-size: 1.1em;
     text-align: center;
@@ -88,10 +76,6 @@ a {
 
 section a:hover {
     background-color: #DDD;
-}
-
-p > a {
-    color:mediumblue;
 }
 
 nav ul {
@@ -121,8 +105,8 @@ nav ul li a { /*menu de navegacion*/
 }
 
 
-aside p {
-    font-size: 19px;
+aside p {/*se da estilo a los parrafos de aside*/
+    font-size: 15px;
     font-style:italic;
     text-align: center;
     float: right;
@@ -130,7 +114,7 @@ aside p {
 }
 
 aside h2 {
-    background-color:  rgb(36, 109, 106);
+    background: linear-gradient (to bottom,#d0b2e9, white);
     font-size: 25px;
     font-style:italic;
     text-align:center;
@@ -144,11 +128,12 @@ aside h2 {
     border-radius: 5px;
 }
 #contenedor > footer{
-    background: linear-gradient(to top, #5ccae1, white 90%);
-    float: left;
+    background: linear-gradient(to top, #83898a, white 90%);
+    float:left;
     width: 100%;
+    display: inline;
 }
 
 #actual {
-    background-color: #5ccae1;
+    background-color: #939899;
 }
