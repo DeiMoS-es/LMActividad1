@@ -137,3 +137,32 @@ aside h2 {
 #actual {
     background-color: #939899;
 }
+
+/*CSS RESPONSIVE*/
+/*
+@media screen and (max-width: 1000px){
+    section{
+        width:98%;
+    }
+
+}
+
+
+@media screen and (max-width: 700px){
+    article{
+        width:98%;            
+    }
+}
+
+@media screen and (max-width: 1000px){
+    footer{
+        width: 98%;
+    }
+}
+
+@media screen and (max-width:content) {
+    nav{
+        width: auto;
+    }
+}
+    
