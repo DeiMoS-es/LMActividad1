@@ -20,7 +20,7 @@ header {
 
 section {
     float: left;
-    width: 60%;
+    width: 70%;
 }
 
 section header {
@@ -49,14 +49,14 @@ article p {
 }
 
 article img {
-    float: right;
-    max-width:30%;
+    float: left;
+    max-width:50%;
     /*min-width: 119px;*/
     /*height:15vw;*/
     /*min-height: 85px;*/
     max-height: 30vmin;
     box-sizing: border-box;
-    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 10px;
     object-fit: scale-down;
 }
@@ -82,9 +82,11 @@ article img {
     margin: 0% auto 1%;
 }
 
-aside {
-    float: right;
-    width: 20%;
+aside {    
+    display: none;
+    visibility: collapse;
+    /*float: right;
+    width: 20%;*/
 }
 
 h1, h2, p {
@@ -127,8 +129,13 @@ h3 {
 }
 
 nav {
-    float: left;
-    width: 20%;
+    float: right;
+    width: 30%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    align-items:stretch;
+    overflow:initial;
 }
 
 a {
@@ -207,6 +214,12 @@ aside ul {
     /*margin-left: 0;*/
     padding-left: 1rem;
 }
+
+#contenedor {
+    align-items:center;
+    min-height:100vmax;
+}
+
 
 #contenedor > footer{
     background: linear-gradient(to top, #5ccae1, white 90%);
