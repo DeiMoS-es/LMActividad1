@@ -32,16 +32,21 @@
             <img id="logo" src="imagenes/beer.png" alt="Logo empresa">
         </header>
 
-        <nav id="menu">
-            <ul>
-                <li class="home"> <a href="index.html">Principal</a> </li>
-                <li class="news"> <a href="Noticias.html" id="actual">Noticias</a> </li>
-                <!-- <li class="publ"> <a href="#">Publicaciones</a> </li>
-                <li class="where"> <a href="#">Localización</a> </li> 
-                <li class="us"> <a href="#">Quienes somos</a> </li> -->
-                <li class="areas"> <a href="AreasActuacion.html">Áreas de actuación</a> </li>
-                <li class="contact"> <a href="Contactos.html">Contacto</a> </li>
-            </ul>
+        <nav class="collapsable-menu">
+            <!-- <a href="#" class="dropbtn">Menu</a> -->
+            <input type="checkbox" id="menu">
+            <label for="menu"></label>
+            <div class="menu-content">
+                <ul class="lista-menu">
+                    <li class="menulink" id="home"> <a href="index.html">Inicio</a> </li>
+                    <li class="menulink" id="news"> <a href="Noticias.html" id="actual">Noticias</a> </li>
+                    <!-- <li class="publ"> <a href="#">Publicaciones</a> </li>
+                    <li class="where"> <a href="#">Localización</a> </li>  -->
+                    <li class="menulink" id="us"> <a href="Nosotros.html">Quienes somos</a> </li>
+                    <li class="menulink" id="areas"> <a href="AreasActuacion.html">Áreas de actuación</a> </li>
+                    <li class="menulink" id="contact"> <a href="Contactos.html">Contacto</a> </li>
+                </ul>
+            </div>
         </nav>
         
         <section>

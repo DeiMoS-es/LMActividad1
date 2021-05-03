@@ -210,3 +210,7 @@ aside ul {
 #actual {
     background-color: #5ccae1;
 }
+
+input {
+    display: none;
+}
