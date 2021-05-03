@@ -509,19 +509,29 @@ nav .lista-menu:hover .lista-menu {
     /*padding: 0 0 0 50px;*/
 }
 
-input {
+#menu {
     display: none;
 }
 
-input:checked {
+#menu:checked {
     display: none;
 }
 
 /* Toggle Effect */
-input:checked~label {
+#menu:checked~label {
     /*background-image: url(close.png);*/
 }
 
-input:checked~.menu-content {
+#menu:checked~.menu-content {
     max-height: 100%;
 }
+
+.vel-envio {
+    max-height: 0;
+    overflow: hidden;
+}
+
+#hacer-pedido:checked~.vel-envio {
+    max-height: 100%;
+}
+
