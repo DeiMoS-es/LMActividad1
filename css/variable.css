@@ -1,0 +1,62 @@
+/*definimos estilo para ancho variable de monitores de más de 1300px de ancho*/
+@media  screen and (min-width: 1300px) {
+                body {
+                    width: 98%;
+                    height: auto;
+
+                }
+
+                header {
+                    margin: 0;
+                    padding: 0;
+                    min-height: 10%;
+                    max-height: 20%;
+                    object-fit: fill;
+                }
+
+                section{
+                    width: 70%;
+                    float: left;
+                }
+
+                article{
+                    width: 98%;
+                    display: block;
+
+                }
+
+                aside{
+                    width: 30%;
+                    float: right;
+                }
+ 
+}
+
+
+/*CSS RESPONSIVE*/
+/*
+@media screen and (max-width: 1000px){
+    section{
+        width:98%;
+    }
+
+}
+
+
+@media screen and (max-width: 700px){
+    article{
+        width:98%;            
+    }
+}
+
+@media screen and (max-width: 1000px){
+    footer{
+        width: 98%;
+    }
+}
+
+@media screen and (max-width:content) {
+    nav{
+        width: auto;
+    }
+}
