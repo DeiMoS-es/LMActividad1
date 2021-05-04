@@ -215,6 +215,8 @@ aside ul {
     display: none;
 }
 
+/* Formularios */
+
 form{
 	padding-left: 10px;;
 	margin:auto;
@@ -280,7 +282,7 @@ textarea{
 
 .vel-envio {
     /*max-height: 0;*/
-    display: none;
+   display: none;
 }
 
 #hacer-pedido:checked~.vel-envio {
@@ -288,5 +290,3 @@ textarea{
     /*max-height: 100%;
     overflow: visible;*/
 }
-
-

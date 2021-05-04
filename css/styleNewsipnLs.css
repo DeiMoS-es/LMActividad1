@@ -234,3 +234,80 @@ aside ul {
 input {
     display: none;
 }
+
+
+/* Formularios */
+
+form{
+	padding-left: 10px;;
+	margin:auto;
+	background: linear-gradient(to bottom, white, #5ccae1 50%, white);
+}
+
+form label{
+	width:80%;
+	font-weight:bold;
+	display:block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+	width:80%;
+	padding:3px 10px;
+	border:1px solid;
+	border-radius:3px;
+	background-color:#ffffff;
+	margin:9px 0;
+	display:inline-block;
+}
+
+
+form input[type="submit"]{
+	width:70%;
+	padding:8px 16px;
+	margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 30px;
+    justify-content: center;
+	border:1px solid #000;
+	display:block;
+	color:rgb(255, 255, 255);
+	background-color:rgb(158, 65, 65);
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+.form-h2 {
+    background: none;
+}
+
+fieldset {
+    border: none;
+}
+
+textarea{
+	width:95%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+
+.vel-envio {
+    /*max-height: 0;*/
+   display: none;
+}
+
+#hacer-pedido:checked~.vel-envio {
+    display: block;
+    /*max-height: 100%;
+    overflow: visible;*/
+}

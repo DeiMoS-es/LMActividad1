@@ -82,38 +82,40 @@
             <fieldset>
                 <legend><h2 class="form-h2">Rellene sus datos de contacto</h2></legend>
 
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" />
+                <div class="grid">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" />
 
-                <label for="apellidos">Apellidos / Razón social</label>
-                <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos u organización" />
-                
-                <label for="telf">Teléfono</label>
-                <input type="tel" name="telf" id="telf" placeholder="Número de teléfono" />
+                    <label for="apellidos">Apellidos / Razón social</label>
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos u organización" />
 
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Dirección de correo" required />
+                    <label for="telf">Teléfono</label>
+                    <input type="tel" name="telf" id="telf" placeholder="Número de teléfono" />
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Dirección de correo" required />
 
                     <label for="asunto">Asunto</label>
+                    <div></div>
                     <input type="radio" name="asunto" value="G" checked />Consulta general<br />
                     <input type="radio" name="asunto" value="P" id="hacer-pedido" />Realizar pedido<br />
                     <input type="radio" name="asunto" value="C" />Pedido en curso<br />
                     <input type="radio" name="asunto" value="B" />Contacto de empresa<br />
                     <input type="radio" name="asunto" value="O" />Otros<br />
-                
-                <div class="vel-envio">
-                <label for="envio">Velocidad del envío</label>
-                <select name="velocidad">
-                    <option value="S" selected>Envío normal (3-4 días laborables)</option>
-                    <option value="R">Envío urgente (1-2 días)</option>
-                    <option value="P">Envío preferente (máximo 24h)</option>
-                </select>
-                </div>
+                    <div></div>
+                    <div></div>
 
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" for="mensaje"
-                    placeholder="Describe brevemente tu consulta." minlength="25" maxlength="300" required></textarea>
-                
+                    <label class="vel-envio" for="envio">Velocidad del envío</label>
+                    <select class="vel-envio" name="velocidad">
+                        <option value="S" selected>Envío normal (3-4 días laborables)</option>
+                        <option value="R">Envío urgente (1-2 días)</option>
+                        <option value="P">Envío preferente (máximo 24h)</option>
+                    </select>
+                                    
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" for="mensaje" placeholder="Describe brevemente tu consulta." minlength="25"
+                        maxlength="300" required></textarea>
+                </div>
 
                 <input type="checkbox" name="terminos" value="Y" >Acepto los términos de uso<br>
                 <input type="submit" name="enviar" value="Enviar" />
