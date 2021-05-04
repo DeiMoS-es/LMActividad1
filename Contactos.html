@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8"> <!--Doy codificadores de caracteres-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Creamos los diferentes accesos para hacer la página responsive-->
     <link rel="stylesheet" type="text/css" href="css/estilos1.css"> <!--Colocamos el link al css de nuestra página-->
+    <link rel="stylesheet" media="screen and (min-width: 1301px)" href="css/Contactos1300.css"><!--vamos a crear el acceso con un ancho maximo de 1300px de ancho-->
+    <link rel="stylesheet" media='screen and (min-device-width: 900px) and (max-width: 900px)' href="css/Contactosmen900.css"><!--vamos a crear el acceso con un ancho maximo de 900px de ancho-->
+    <link rel="stylesheet" media='screen and (min-width: 901px) and (max-width: 1300px)' href="css/Contactos900.css"><!--vamos a crear el acceso con una resolucion de 900 a 1300px de ancho-->
+    <link rel="stylesheet" media='screen and (max-device-width: 767px) and (orientation: portrait)' href="css/contactosipvt.css"><!--vamos a crear el acceso con un iPad posicion vertical-->
+    <link rel="stylesheet" media='screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)' href="css/Contactosiphz.css"><!--vamos a crear el acceso con un iPad posicion horizontal-->
+    
+    
     <title>contactos</title>
 </head>
 <body>
@@ -15,10 +24,10 @@
         </header>
         <nav class="menu">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Quienes Somos</a></li>
-                <li><a href="#">Áreas de actuación</a></li>
-                <li><a href="contactos.html">Contacto</a></li>
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="Noticias.html">Noticias</a></li>
+                <li><a href="">Áreas de actuación</a></li>
+                <li><a href="contactos.html"id="actual">Contactos</a> </li>
             </ul>
         </nav>
         <section>
@@ -49,19 +58,19 @@
                 </h2>         
     <form action="mailto:pedro.marnau@gmail.com" method="post" name="form1">
 
-        <label for="nombre">Nombre</label>
+        <label for="nombre">Nombre :</label>
         <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
 
-        <label for="apellidos">Apellidos</label>
+        <label for="apellidos">Apellidos :</label>
         <input type="text" name="apellidos" id="apellidos" placeholder="1r Apellido"/>
 
-        <label for="email" />Email</label>
+        <label for="email" />Email :</label>
         <input type="email" name="email" id="email" placeholder="email" required />
 
-        <label for="asunto">Asunto</label>
+        <label for="asunto">Asunto :</label>
         <input type ="text" name="asunto" id="asunto" placeholder="titular de la consulta"/>
 
-        <label for="mensaje">Mensaje</label>
+        <label for="mensaje">Mensaje :</label>
         <textarea name="mensaje" for="mensaje" placeholder="Dime de forma breve el pedido que deseas recibir." maxlength="300"></textarea>
         
         <input type="submit" name="enviar" value="Enviar"/>
