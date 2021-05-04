@@ -152,8 +152,140 @@ h3{
     margin-top: 40px;
 }
 
-@media screen and (max-width: 375px){
-    aside {
-        margin-top: 80%;
-    }    
+/*=================================================
+    |                                              |
+    |Empezamos a dar estilos mediante medias querys|
+    |                                              |
+  =================================================
+    */
+
+/*
+    Para resolucines entre 900 y 1299
+*/
+@media screen and (min-width:900px) and (max-width:1299px){
+    body{
+        margin:1% 10% 1% 5%;
+    }
+    section{
+        float: left;
+        width: 100%;
+    }
+    aside{
+        float: left;
+        width: 100%;
+    }
+}
+
+/*
+    Resoluciones para Ipad en horizontal
+*/
+@media screen and (min-width:768px) and (max-width:899px) and (orientation: portrait) {
+    body{
+        margin:1% 5% 1% 5%;
+    }
+    section{
+        float: left;
+        width: 100%;
+    }
+
+    aside{
+        float: left;
+        width: 100%;
+    }
+    
+}
+/*
+    Resoluciones para Ipad en vertical
+*/
+@media screen and (min-width:768px) and (max-width:899px) and (orientation: landscape) {
+    body{
+        margin:1% 5% 1% 5%;
+    }
+    section{
+        float: left;
+        width: 100%;
+    }
+
+    aside{
+        float: left;
+        width: 100%;
+    }
+    
+}
+/*
+    Resoluciones para Iphone en vertical
+*/
+@media screen and (min-width:414px) and (orientation: portrait) {
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    section{
+        float: left;
+        width: 100%;
+    }
+    
+    aside{
+        float: left;
+        width: 100%;
+    }
+}
+
+/*
+    Resoluciones para Iphone en horizontal
+*/
+
+
+@media screen and (min-width:414px) and (orientation: landscape) {
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    section{
+        float: left;
+        width: 100%;
+    }
+    
+    aside{
+        float: left;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width : 1300px){
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        margin: 0;
+        padding: 0;
+        min-height: 10%;
+        max-height: 20%;
+        object-fit: fill;
+        background: #DFDEDE;
+    }
+
+    section {
+        float: left;
+        width: 49%;
+    }
+    
+    aside{
+        float: left;
+        width: 49%;
+        
+    }
+    
+    li a{
+        width:10%;
+    }
+    
+    ul{
+        width: 100%;
+    
 }
