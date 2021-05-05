@@ -218,19 +218,15 @@ input {
 /* Intento 8 de desplegable */
 
 /* basado en: https://www.sowebsited.com/basics/collapse.html */
-
+/*
 .menu-content {
     position:relative;
     left: -10px;
-    /*padding: 0 0 50px;*/
 }
 
 .collapsable-menu {
     position: relative;
     left: 10px;
-    /*padding: 0px 30px;*/
-    /*border-bottom: 1px solid #5ccae1;*/
-    /*box-shadow: 1px 2px 3px;*/
 }
 
 .collapsable-menu ul {
@@ -240,7 +236,6 @@ input {
 
 .collapsable-menu a {
     display: block;
-    /*padding: 10px;*/
     text-decoration: none;
     font-size: 20px;
 }
@@ -249,7 +244,6 @@ input {
     display: block;
     cursor: pointer;
     width: 18px;
-    /*background: url(menu.png) no-repeat left center;*/
     padding: 3px 0 0px 10px;
     border-bottom: 10.5px double #326772;
     border-top: 3.5px solid #326772;
@@ -261,7 +255,6 @@ input {
     max-height: 0;
     overflow: hidden;
     font-family: 'Oswald', sans-serif;
-    /*padding: 0 0 0 50px;*/
 }
 
 #menu {
@@ -271,7 +264,7 @@ input {
 #menu:checked {
     display: none;
 }
-
+*/
 /* Toggle Effect */
 #menu:checked~label {
     /*background-image: url(close.png);*/
