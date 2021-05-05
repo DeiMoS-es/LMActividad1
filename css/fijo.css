@@ -1,8 +1,9 @@
 /*definimos estilo para ancho variable de monitores entre 900px y 1300px de ancho*/
 @media  screen and (min-width:900px) and (max-width:1300px){
     body {
-        width: 98%;
+        width: 100%;
         height: auto;
+        
 
     }
 
@@ -17,9 +18,12 @@
 
     }
 
-    aside{
+    /*aside{
         width: 30%;
-        float: right;
-    }
+        float:right;
+        margin-left:auto;
+        margin-right:auto;
+        padding:5px;
+    }*/
 
 }
