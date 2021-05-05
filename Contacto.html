@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!--Doy codificadores de caracteres-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Responsive CSS -->
+
+    <!-- Según ancho --> 
+    <link rel="stylesheet" media='screen and (min-device-width: 900px) and (max-width: 900px)' href="css/styleNewsDef.css">
+    <link rel="stylesheet" media='screen and (min-width: 901px) and (max-width: 1300px)' href="css/styleNews900.css">
+    <link rel="stylesheet" media="screen and (min-width: 1301px)" href="css/styleNews1300.css">
+    <!-- iPad landscape --> 
+    <link rel="stylesheet" media='screen and (min-device-width: 768px) and (min-device-height: 768px) and (max-device-width: 1024px) and (orientation: landscape)' href="css/styleNewsipdLs.css">
+    <!-- iPad portrait --> 
+    <link rel="stylesheet" media='screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)' href="css/styleNewsipdPt.css">
+    <!-- iPhone portrait --> 
+    <link rel="stylesheet" media='screen and (max-device-width: 767px) and (orientation: portrait)' href="css/styleNewsDef.css">
+    <!-- iPhone landscape --> 
+    <link rel="stylesheet" media='screen and (max-device-height: 767px) and (orientation: landscape)' href="css/styleNewsipnLs.css">
+    
+    <title>contactos</title>
+
+    <!-- FORMULARIO ALTERNATIVO -->
+
+    <!-- La segunda casilla del radio activa la visualización 
+        de una opción oculta para la velocidad de envío -->
+
+
+</head>
+
+<body>
+    <div id="contenedor">
+
+    <header>
+        <img id="logo" src="img/pack.jpg" alt="Logo empresa">
+    </header>
+
+        <!--
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Noticias.html">Noticias</a></li>
+                <li><a href="#">Quienes Somos</a></li>
+                <li><a href="AreasActuacion.html">Áreas de actuación</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+        -->
+
+    <nav class="collapsable-menu">
+        <input type="checkbox" id="menu">
+        <label for="menu"></label>
+        <div class="menu-content">
+            <ul class="lista-menu">
+                <li class="menulink" id="home"> <a href="index.html">Inicio</a> </li>
+                <li class="menulink" id="news"> <a href="Noticias.html">Noticias</a> </li>
+                <!-- <li class="publ"> <a href="#">Publicaciones</a> </li>
+                <li class="where"> <a href="#">Localización</a> </li>  -->
+                <li class="menulink" id="us"> <a href="Nosotros.html">Quienes somos</a> </li>
+                <li class="menulink" id="areas"> <a href="AreasActuacion.html">Áreas de actuación</a> </li>
+                <li class="menulink" id="contact"> <a href="Contacto.html" id="actual">Contacto</a> </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <section>
+        <header class="seccion">
+            <h1>Contacta con nosotros</h1>
+        </header>
+
+        <article class="solicitudes1">                
+            <h2>
+                Requerimientos
+            </h2>
+            <p>
+                A continuación podras ponerte en contacto para que te podamos enviar nuestros productos.
+            </p>
+            <p>
+                Tomate tu tiempo para poder elegir el producto a tu elección ya que la cerveza requiere su
+                tiempo.
+            </p>
+            <p>
+                Ya que cerveza es lo que queremos cerveza es lo que tendremos.
+            </p>
+        
+            <form action="mailto:pedro.marnau@gmail.com" method="post" name="form1">
+            <fieldset>
+                <legend><h2 class="form-h2">Rellene sus datos de contacto</h2></legend>
+
+                <div class="grid">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" />
+
+                    <label for="apellidos">Apellidos / Razón social</label>
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos u organización" />
+
+                    <label for="telf">Teléfono</label>
+                    <input type="tel" name="telf" id="telf" placeholder="Número de teléfono" />
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Dirección de correo" required />
+
+                    <label for="asunto">Asunto</label>
+                    <div></div>
+                    <input type="radio" name="asunto" value="G" checked />Consulta general<br />
+                    <input type="radio" name="asunto" value="P" id="hacer-pedido" />Realizar pedido<br />
+                    <input type="radio" name="asunto" value="C" />Pedido en curso<br />
+                    <input type="radio" name="asunto" value="B" />Contacto de empresa<br />
+                    <input type="radio" name="asunto" value="O" />Otros<br />
+                    <div></div>
+                    <div></div>
+
+                    <label class="vel-envio" for="envio">Velocidad del envío</label>
+                    <select class="vel-envio" name="velocidad">
+                        <option value="S" selected>Envío normal (3-4 días laborables)</option>
+                        <option value="R">Envío urgente (1-2 días)</option>
+                        <option value="P">Envío preferente (máximo 24h)</option>
+                    </select>
+                                    
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" for="mensaje" placeholder="Describe brevemente tu consulta." minlength="25"
+                        maxlength="300" required></textarea>
+                </div>
+
+                <input type="checkbox" name="terminos" value="Y" >Acepto los términos de uso<br>
+                <input type="submit" name="enviar" value="Enviar" />
+            </fieldset>
+            </form>
+        </article>
+    </section>
+
+    <aside>
+        <h2> Artesanos líquidos SA </h2>
+        <p> C/ Del Caldo de Cultivo 8 </p>
+        <p> 28000 - Madrid </p>
+        <p> Síguenos en redes sociales </p>
+    </aside>
+
+    <footer>
+        <p>&copy; Artesanos líquidos SA</p>
+    </footer>
+    </div>
+</body>
+
+</html>
