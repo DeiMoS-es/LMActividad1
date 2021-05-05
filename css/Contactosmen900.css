@@ -1,0 +1,187 @@
+/*Eliminamos los margin y padding que pudiese tener el documento por defecto y añadimos una fuente*/
+*{/*Utilizamos el selector universal*/
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Empiezo a dar estilo a la parte más exterior de la página*/
+#contenedor{ /*Utilizamos un selector de id*/
+    border: 2px solid #000;
+    width: 100%; /*Aplico un ancho del 100% para que se ajuste a la ventana del explorador*/
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+nav {
+    min-height: 10%;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    list-style: none;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul li {
+    display: flex;
+    box-sizing: content-box;
+}
+nav ul li a {
+    display: block;
+    width: 100vw;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.9em;
+    display: block;
+    padding: 6px 0 6px 0;
+    float: left;
+}
+nav ul li a:hover {
+    color: #499fb1;
+    font-weight: bold;
+}
+
+aside ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+#contenedor > footer{
+    background: linear-gradient(to top, #5ccae1, white 90%);
+    float: left;
+    width: 100%;
+}
+
+#actual {
+    background-color: #499fb1;
+}
+*{box-sizing:border-box;}/*Podemos utilizar esta funcion de css para administrar bloques y hacer el formulario*/
+/*En nuestro caso fijaremos el tamaño del formulario de tal forma que aunque varien los formatos quede preestablecido y se pueda utilizar en los diferentes formatos.*/
+form{
+	width: 900px;
+    height: 450px;
+	padding:16px;
+	margin:auto;
+	background: linear-gradient(to bottom, #5ccae1 40%, white);
+}
+
+form label{
+	width:90px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid;
+	border-radius:3px;
+	background-color:#ffffff;
+	margin:9px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:80%;
+	padding:8px 16px;
+	margin-top:90px;
+    margin-left: 60px;
+    margin-right: 60px;
+    justify-content: center;
+	border:1px solid #000;
+	display:block;
+	color:rgb(255, 255, 255);
+	background-color:rgb(158, 65, 65);
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+#contenedor > footer{
+    background: linear-gradient(to top, #5ccae1, white 90%);
+    float: left;
+    width: 100%;
+}
+img {
+    height: 400px; /*Ampliamos la imagen en este formato para hacer la imagen mas sugerente.*/
+    margin-left: 100px; /*Centramos la imagen para presentar como una manera de atraer la atención en éste formato*/
+}
+
+#actual {
+    background-color: #499fb1;
+}
+*{box-sizing:border-box;}/*Podemos utilizar esta funcion de css para administrar bloques y hacer el formulario*/
+
+form{
+	width: 900px;
+    height: 450px;
+	padding:16px;
+	margin:auto;
+	background: linear-gradient(to bottom, #5ccae1 40%, white);
+}
+
+form label{
+	width:90px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid;
+	border-radius:3px;
+	background-color:#ffffff;
+	margin:9px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:80%;
+	padding:8px 16px;
+	margin-top:90px;
+    margin-left: 60px;
+    margin-right: 60px;
+    justify-content: center;
+	border:1px solid #000;
+	display:block;
+	color:rgb(255, 255, 255);
+	background-color:rgb(158, 65, 65);
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+
