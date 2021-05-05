@@ -32,15 +32,7 @@ section header {
     text-align: center;
 }
 
-section footer {
-    background-color:#5ccbe157;
-    border-top-style: solid;
-    border-width: 2px;
-    border-color: #5ccae1;
-    font-size: 1em;
-    text-align: start;
-    padding: 0 0 1% inherit;
-}
+
 
 article p {
     text-align: justify; /*Para que nuestro texto quede centrado lo incluiremos como texto justificad*/
@@ -134,11 +126,6 @@ aside ul {
     list-style: none;
 }
 
-#contenedor > footer{ /*Montamos un contenedor inferior para poder almacenar nuestra información y detalles de la página*/
-    background: linear-gradient(to top, #5ccae1, white 90%);
-    float: left;
-    width: 100%;
-}
 
 #actual {
     background-color: #499fb1;
@@ -223,3 +210,9 @@ form input[type="submit"]{
 	background-color:rgb(158, 65, 65);
     border-radius: 5px;
 } 
+section footer {
+    background: linear-gradient(to top, #5ccae1, white 90%);
+    font-size: 1em;
+    text-align: start;
+    padding: 0 0 2% inherit;
+}
