@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!--Doy codificadores de caracteres-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Creamos los diferentes accesos para hacer la página responsive-->
+    <link rel="stylesheet" type="text/css" href="css/estilos1.css"> <!--Colocamos el link al css de nuestra página-->
+    <link rel="stylesheet" media="screen and (min-width: 1301px)" href="css/Contactos1300.css"><!--vamos a crear el acceso con un ancho maximo de 1300px de ancho-->
+    <link rel="stylesheet" media='screen and (min-device-width: 900px) and (max-width: 900px)' href="css/Contactosmen900.css"><!--vamos a crear el acceso con un ancho maximo de 900px de ancho-->
+    <link rel="stylesheet" media='screen and (min-width: 901px) and (max-width: 1300px)' href="css/Contactos900.css"><!--vamos a crear el acceso con una resolucion de 900 a 1300px de ancho-->
+    <link rel="stylesheet" media='screen and (max-device-width: 767px) and (orientation: portrait)' href="css/contactosipvt.css"><!--vamos a crear el acceso con un iPad posicion vertical-->
+    <link rel="stylesheet" media='screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)' href="css/Contactosiphz.css"><!--vamos a crear el acceso con un iPad posicion horizontal-->
+    
+    
+    <title>contactos</title>
+</head>
+<body>
+    
+<body>
+    <div id="contenedor">
+        <header>
+            <img id="logo" src="imagenes/pack.jpg" alt="Logo empresa">
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="Noticias.html">Noticias</a></li>
+                <li><a href="Areasactuacion.html">Áreas de actuación</a></li>
+                <li><a href="contactos.html"id="actual">Contactos</a> </li>
+            </ul>
+        </nav>
+        <section>
+            <!--Contenido principal-->
+            <header class="seccion">  
+            </header>
+            <section>
+                <header>
+                    <h1>Contacta con nosotros</h1>                
+                </header>
+                <article calss="solicitudes1">
+                <h2>
+                    Requerimientos
+                </h2>        
+               
+                <p>
+                    A continuación podras ponerte en contacto para que te podamos enviar nuestros productos.
+                </p>
+                <p>
+                    Tomate tu tiempo para poder elegir el producto a tu elección ya que la cerveza requiere su tiempo.
+                </p>
+                <p>
+                    Ya que cerveza es lo que queremos cerveza es lo que tendremos.
+                </p>
+                </article> 
+                <h2>
+                    Rellene sus datos de contacto
+                </h2>         
+    <fieldset><legend>Pasword :</legend>
+        <label for="Pasword">Introduce tu contraseña</label>
+            <input type="password" autofocus/><!--Gracias a la opcion de autofocus podemos hacer que al entrar en la pagina el usuario se centre en rellenar la password
+            Además con el tipo pasword tendremos limitada la vista del usuario para que cada digito sea "·"-->
+    </fieldset>
+
+
+    <form action="mailto:pedro.marnau@gmail.com" method="post" name="form1">
+
+        <label for="asunto">Asunto :</label>
+        <input type="radio" name="asunto" value="G" checked />Consulta general<br />
+                    <input type="radio" name="asunto" value="P" id="hacer-pedido" />Realizar pedido<br />
+                    <input type="radio" name="asunto" value="C" />Pedido en curso<br />
+                    <input type="radio" name="asunto" value="B" />Contacto de empresa<br />
+                    <input type="radio" name="asunto" value="O" />Otros<br />
+        <input type ="text" name="asunto" id="asunto" placeholder="titular de la consulta"/>
+        <fieldset><legend>Elige las mejores birrillas</legend>
+                <input type="checkbox" name="pe" value="G" />Gunes <br/>  
+                <input type="checkbox" name="pe" value="C" />Carsberg <br/>
+                <input type="checkbox" name="pe" value="F" />Fresca <br/>
+                <input type="checkbox" name="pe" value="R" />Ricosa <br/>
+            <br />
+            <select name="Tipo de envase" placeholder="------"/>
+                <option value="a">tercio</option>
+                <option value="b">Botella Litro</option>
+                <option value="c">Botella 2 Litros</option>
+                <option value="e">lata 33cl</option>
+                </option>
+            </select>
+            <label for="cantidad">Número de unidades:</label>
+            <input type="number" min=0 max=50 step1 placeholder="0"/>
+        </fieldset>
+        <label for="nombre">Nombre :</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+
+        <label for="apellidos">Apellidos :</label>
+        <input type="text" name="apellidos" id="apellidos" placeholder="1r Apellido"/>
+        <label for="email" />Email :</label>
+        <input type="email" name="email" id="email" placeholder="email" required /><!--Con el campo email solo lo podremos rellenar con un email correcto-->
+        <label for="telefono">Telefono:</label>
+        <input type="tel" name="telefono" id="telefono" placeholder="telefono"><!--Con la opcion de type "tel" solo nos dejara intruducir el número de teléfono-->
+        <label for="Pag">Página de contacto:</label>
+        <input type="url" name="page" id="pag" placeholder="página web"><!--Con la opcion de type "url" solo nos dejara intruducir una url válida-->
+        <label for="mensaje">Mensaje :</label>
+        <textarea name="mensaje" for="mensaje" placeholder="Dime de forma breve el pedido que deseas recibir."maxlength="300"></textarea><!--utilizamos
+        placeholder para que el texto de la caja del mensaje que orienta al usuario desaparezca al situar encima el cursor-->
+        <input type="submit" name="enviar" value="Enviar"/>
+        <input type="reset" name="Eliminar datos" vaule="Eliminar datos"/><!--Con ésta fúncion podremos reseetear los datos ingresados en nuestro formulario
+        por lo que a la hora de posicionarlo podremos hacerlo en la parte posterior de nuestro documento-->
+    </form>
+
+
+      
+
+    <footer>
+    <p>&copy; Artesanos líquidos SA</p>
+    </footer>
+</body>
+</html>
