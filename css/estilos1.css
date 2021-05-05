@@ -156,6 +156,10 @@ form label[for="asunto"]{
 	display:inline-block;    
 }
 
+form label[for="mensaje"]{
+	display:block;
+}
+
 form input[type="text"],
 form input[type="email"]{
 	width:180px;
@@ -166,6 +170,7 @@ form input[type="email"]{
 	margin:9px 0;
 	display:inline-block;
 }
+
 form input[type="radio"]{
     margin-top:9px;
 }

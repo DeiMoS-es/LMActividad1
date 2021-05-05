@@ -27,7 +27,7 @@
 /*En nuestro caso fijaremos el tamaño del formulario de tal forma que aunque varien los formatos quede preestablecido y se pueda utilizar en los diferentes formatos.*/
 form{
 	width: 900px;
-    height: 450px;
+    height:fit-content;
 	padding:16px;
 	margin:auto;
 	background: linear-gradient(to bottom, #5ccae1 40%, white);
@@ -78,3 +78,31 @@ textarea{
 	resize:none;
 	display:block;
 }
+
+form input[type="reset"]{
+	width:20%;
+	padding:8px 16px;
+	margin-top:10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: left;
+	border:1px solid #000;
+	color:rgb(255, 255, 255);
+	background-color:rgb(158, 65, 65);
+    border-radius: 5px;
+	display: inline-block;
+} 
+
+form input[type="submit"]{
+	width:40%;
+	padding:8px 16px;
+	margin-top:10px;
+    margin-left:10px;
+    margin-right:10px ;
+    justify-content: center;
+	border:1px solid #000;
+    color:rgb(255, 255, 255);
+	background-color:rgb(158, 65, 65);
+    border-radius: 5px;
+	display: inline-block;
+} 
