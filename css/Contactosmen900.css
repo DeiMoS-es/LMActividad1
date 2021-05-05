@@ -148,7 +148,7 @@ form label{
 form input[type="text"],
 form input[type="email"],
 form input[type="tel"],
-form input[type="url"],
+form input[type="url"]
 {
 	width:180px;
 	padding:3px 10px;

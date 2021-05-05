@@ -133,8 +133,8 @@ aside ul {
 *{box-sizing:border-box;}/*Podemos utilizar esta funcion de css para administrar bloques y hacer el formulario*/
 
 form{
-	width: 900px;
-    height: 650px;
+	width: 100%;
+    height:fit-content;
 	padding:16px;
 	margin:auto;
 	background: linear-gradient(to bottom, #5ccae1 40%, white);

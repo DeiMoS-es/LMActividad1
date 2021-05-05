@@ -63,14 +63,13 @@ aside ul {
 }
 img {
     height: 300px; /*Ampliamos la imagen en este formato para hacer la imagen mas sugerente.*/
-    margin-left: 200px; /*Centramos la imagen para presentar como una manera de atraer la atención en éste formato*/
 }
 
 *{box-sizing:border-box;}/*Podemos utilizar esta funcion de css para administrar bloques y hacer el formulario*/
 /*En nuestro caso fijaremos el tamaño del formulario de tal forma que aunque varien los formatos quede preestablecido y se pueda utilizar en los diferentes formatos.*/
 
 form{
-	width: 900px;
+	width: 100%;
     height:fit-content;
 	padding:16px;
 	margin:auto;
